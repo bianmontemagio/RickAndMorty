@@ -1,0 +1,49 @@
+<div
+class="botones"
+>
+<button
+    (click)="filtrarGenero('male')">
+  Hombres
+  </button>
+  <button 
+    (click)="filtrarGenero('female')">
+  Mujeres
+  </button>
+  <button
+    (click)="filtrarEstado('alive')">
+  Vivos
+  </button>
+  <button
+    (click)="filtrarEstado('dead')">
+  Muertos
+  </button>
+</div>
+
+<button
+    (click)="buscoPersonajes()">
+    Ver Personajes
+</button>
+
+<button
+    (click)="irA(prevPage)"
+    *ngIf="prevPage">
+  Anterior
+</button>
+<button
+    (click)="irA(nextPage)">
+  Siguiente
+</button>
+
+<div
+class="characters"
+>
+<div
+*ngFor="let personaje of listaPersonajes" 
+class="character">
+<img *ngIf="personaje.image" [src]="personaje.image" alt="{{personaje.name}}">
+<h3>
+  {{personaje.name}} 
+</h3>
+</div>
+</div>
+

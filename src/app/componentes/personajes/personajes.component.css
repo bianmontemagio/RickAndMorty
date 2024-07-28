@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'get_schwifty';
+    src: url('/assets/fuente/get_schwifty.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  :host {
+    font-family: 'get_schwifty', sans-serif;
+  }
+  
+.botones {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    height: 10vh;
+    background-image: url(https://i.pinimg.com/originals/94/a4/4e/94a44e36e36278d416c029ad1a4449ea.jpg);
+  }
+  button{
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+    background-color: cyan;
+    font-weight: bolder;
+    padding: 10px 20px;  
+    border-radius: 10px;
+    border-color: rgb(20, 255, 20);
+    font-family: 'get_schwifty', sans-serif;
+    font-size: 100%;
+  }
+
+  .characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url(https://i.pinimg.com/originals/c5/8c/bc/c58cbcd0d92528760e7f191c8884a46f.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .character {
+    margin: 10px;
+    text-align: center;
+  }
+  .character h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 4px 4px 8px #000000;
+  }
+  
+  
+  .character img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
